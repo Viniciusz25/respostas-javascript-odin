@@ -49,14 +49,17 @@
 */
 
 // Edit below this line =============
-const birthYear = 1948;
-const thisYear = 1965;
-const firstName = "Carlos";
-const lastName = "Stevenson";
+const birthYear = 1948
+const thisYear = 1965
+const firstName = 'Carlos'
+const lastName = 'Stevenson'
 
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+let fullName = firstName + " " + lastName
+const age = thisYear - birthYear
 
-console.log(greeting);
+const greeting = "Hello! My name is" + " " + fullName + " " + "and I am" + " " + age + " years old."
+
+console.log(greeting)
 
 
 
@@ -69,12 +72,14 @@ console.log(greeting);
 // Step 2: 
 
 module.exports = {
-	testGroup: "a",
+	testGroup: "b",
 	greeting,
 	birthYear,
 	thisYear,
 	firstName,
-	lastName
+	lastName,
+	fullName,
+	age
 }
 
 
